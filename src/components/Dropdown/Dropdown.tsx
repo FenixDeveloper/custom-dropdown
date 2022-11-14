@@ -159,6 +159,7 @@ export function Dropdown({trigger, children, side, components, options, hover = 
     </Trigger>
     {(isOpened && isVisible) && createPortal(<Panel
       {...panelOptions}
+      {...hoverOptions}
       className={panelReplaceClassName ?? cs(styles.panel, mergedOptions.panel?.className)}
       ref={panelRef}
       style={{
