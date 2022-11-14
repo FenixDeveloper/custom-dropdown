@@ -161,7 +161,7 @@ function Dropdown(_ref) {
     className: triggerReplaceClassName !== null && triggerReplaceClassName !== void 0 ? triggerReplaceClassName : (0, _classnames.default)(_DropdownModule.default.trigger, (_mergedOptions$trigge = mergedOptions.trigger) === null || _mergedOptions$trigge === void 0 ? void 0 : _mergedOptions$trigge.className),
     ref: triggerRef,
     onClick: onTriggerClick
-  }), trigger !== null && trigger !== void 0 ? trigger : /*#__PURE__*/_react.default.createElement(_DropdownComponents.TriggerIcon, null)), isOpened && isVisible && /*#__PURE__*/(0, _reactDom.createPortal)( /*#__PURE__*/_react.default.createElement(Panel, _extends({}, panelOptions, {
+  }), trigger !== null && trigger !== void 0 ? trigger : /*#__PURE__*/_react.default.createElement(_DropdownComponents.TriggerIcon, null)), isOpened && isVisible && /*#__PURE__*/(0, _reactDom.createPortal)( /*#__PURE__*/_react.default.createElement(Panel, _extends({}, panelOptions, hoverOptions, {
     className: panelReplaceClassName !== null && panelReplaceClassName !== void 0 ? panelReplaceClassName : (0, _classnames.default)(_DropdownModule.default.panel, (_mergedOptions$panel = mergedOptions.panel) === null || _mergedOptions$panel === void 0 ? void 0 : _mergedOptions$panel.className),
     ref: panelRef,
     style: {
