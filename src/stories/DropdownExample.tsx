@@ -13,13 +13,18 @@ function FaIcon({icon, size, style = 'fa-solid'}: FaIconProps): JSX.Element {
     </span>
 }
 
-export function DropdownExample(): JSX.Element {
+interface DropdownExampleProps {
+  hover?: boolean
+}
+
+export function DropdownExample({hover = false}: DropdownExampleProps): JSX.Element {
   const command: CommandEventHandler = (event, item) => {
     console.log(`click on command: "${item.label}"`, event.target);
     alert(`click on command: "${item.label}"`);
   };
   return <Dropdown
     trigger={<FaIcon icon="fa-ellipsis-vertical fa-lg" size="is-large" />}
+    hover={hover}
     options={{
       trigger: { replaceClassName: "button has-background-grey-light" },
       panel: { replaceClassName: "" }
