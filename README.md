@@ -8,6 +8,8 @@
 Использованные технологии: TypeScript, SCSS
 Для стилизации в Storybook использованы: [Bulma](https://bulma.io/), [FontAwesome Icons](https://fontawesome.com/)
 
+Опубликованная версия на [Github Pages](https://fenixdeveloper.github.io/custom-dropdown/build/)
+
 ## Инструкция по запуску
 Установка зависимостей
 
