@@ -1,20 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import "./index.scss";
 
-import {Dropdown} from "./components";
-import {Menu} from "./components";
+import {DropdownExample} from "./stories/DropdownExample";
+import {DropdownSync} from "./components";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Dropdown>
-      {close => <Menu items={[
-        { label: 'Item 1' },
-        { label: 'Item 2' },
-        { label: 'Item 3' }
-      ]} onCommand={close} />}
-    </Dropdown>
+    <DropdownSync>
+      <div className="App">
+        <div className="example">
+          <div className="example-section">
+            <DropdownExample />
+            <DropdownExample hover={true} />
+          </div>
+          <div className="example-section">
+            <DropdownExample hover={true} />
+            <DropdownExample />
+          </div>
+        </div>
+      </div>
+    </DropdownSync>
   </React.StrictMode>
 );
